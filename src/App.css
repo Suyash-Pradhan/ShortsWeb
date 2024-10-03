@@ -1,0 +1,67 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+.App{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    color: white;
+    place-items: center;
+}
+.appvideos{
+    position: relative;
+    height: 100vh;
+    border-radius: 20px;
+    width: 100%;
+    overflow: scroll;
+    width: 620px;
+    max-width: 620px;
+   width: 100%;
+    scroll-snap-type: y mandatory;
+}
+.appvideos::-webkit-scrollbar{
+    display: none;
+}
+/* for other broweseras */
+.appvideos {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1280px) {
+
+   .appvideos{
+    max-height: 1300px;
+    max-width: 620px;
+   }
+
+  }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .appvideos{
+        max-height: 1300px;
+        max-width: 620px;
+       }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {   
+    .App{
+    width: 100%;
+}
+.appvideos{
+    width: 100%;
+}
+}
+
+@media all and (max-width: 480px) {
+
+
+    .App{
+        width: 100%;
+    }
+    .appvideos{
+        width: 100%;
+    }
+
+ }
